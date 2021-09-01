@@ -17,7 +17,7 @@ const initialState = {
   query: "",
 };
 
-export const expenseReducer = (state = initialState, action) => {
+export const expense = (state = initialState, action) => {
   switch (action.type) {
     case ADD_EXPENSE: {
       localStorage.setItem(
