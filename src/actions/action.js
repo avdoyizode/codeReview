@@ -1,0 +1,24 @@
+import { ADD_EXPENSE, DELETE_EXPENSE, SEARCH_EXPENSE } from "./actionTypes";
+
+//various actions defined here
+export const addExpense = (data) => {
+  return {
+    type: ADD_EXPENSE,
+    data,
+  };
+};
+
+export const deleteExpense = (data) => {
+  console.log(data, "Action");
+  return {
+    type: DELETE_EXPENSE,
+    data,
+  };
+};
+
+export const searchExpense = (query) => {
+  return {
+    type: SEARCH_EXPENSE,
+    query,
+  };
+};
